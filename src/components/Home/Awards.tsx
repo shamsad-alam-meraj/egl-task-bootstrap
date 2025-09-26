@@ -27,9 +27,9 @@ export default function Awards() {
           {images.map((img, index) => (
             <motion.div
               key={index}
-              className="position-relative flex-shrink-0 opacity-75"
+              className="position-relative flex-shrink-0 opacity-60"
               style={{ width: img.width, height: img.height }}
-              whileHover={{ opacity: 1, scale: 1.05 }}
+              whileHover={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
             >
               <Image

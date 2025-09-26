@@ -1,0 +1,23 @@
+.sectionHeader {
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: #f9fafb; 
+}
+
+.rowHover:hover {
+  background-color: #f0fdf4;
+}
+
+.fontInter {
+  font-family: "Inter", sans-serif;
+}
+
+.textGreen {
+  color: #28B446 !important;
+}
+
+.textRed {
+  color: #FE4773 !important;
+}
+

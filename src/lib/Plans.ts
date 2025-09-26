@@ -1,0 +1,45 @@
+export const planList = [
+  {
+    name: "Hobbyist",
+    price: 16,
+    description: "Per person / month",
+    description2: "1 person included",
+    description3: "Elevate your projects, watermark-free",
+    features: [
+      "10 transcription hours / month",
+      "Export 1080p, watermark-free",
+      "20 uses / month of Basic AI Actions suite",
+      "30 minutes / month of AI speech",
+      "5 minutes / month of avatars",
+    ],
+  },
+  {
+    name: "Creator",
+    price: 16,
+    description: "Per person / month",
+    description2: "Scale to a team of 3 (billed separately)",
+    description3: "Unlock advanced AI-powered creativity",
+    features: [
+      "10 transcription hours / month",
+      "Export 1080p, watermark-free",
+      "20 uses / month of Basic AI Actions suite",
+      "30 minutes / month of AI speech",
+      "5 minutes / month of avatars",
+    ],
+    highlight: true,
+  },
+  {
+    name: "Business",
+    price: 16,
+    description: "Per person / month",
+    description2: "For larger teams",
+    description3: "Empower collaboration on your team",
+    features: [
+      "10 transcription hours / month",
+      "Export 1080p, watermark-free",
+      "20 uses / month of Basic AI Actions suite",
+      "30 minutes / month of AI speech",
+      "5 minutes / month of avatars",
+    ],
+  },
+];

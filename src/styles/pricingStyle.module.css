@@ -1,0 +1,64 @@
+.highlightCard {
+  border: 13px solid #deedea;
+  background: #ffffff;
+  transform: translateY(-10px) scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.otherCard {
+  background-color: #deedea;
+}
+
+.toogleBtn {
+  width: 58px;
+  height: 29px;
+  background: #000;
+  border-radius: 999px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.toggleKnob {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.toogleBtn.active .toggleKnob {
+  transform: translateX(29px);
+}
+
+.saveBadge {
+  position: absolute;
+  top: -15px;
+  right: -45px;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 7px 20px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  transform: rotate(20.85deg);
+  font-size: 16px;
+}
+
+.hoverTranslateY:hover {
+  transform: translateY(-8px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.hoverShadowLG:hover {
+  box-shadow: 0 25px 50px -12px rgba(28, 152, 118, 0.25);
+}
+
+.transition {
+  transition: all 0.2s ease-in-out;
+}

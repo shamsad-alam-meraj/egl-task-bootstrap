@@ -1,0 +1,122 @@
+.bgOverlay {
+  background-color: #def7ec80 !important;
+}
+
+.enterpriseTitle {
+  font-size: 55px;
+}
+
+.enterpriseSubtitle {
+  font-size: 55px;
+  color: #111;
+}
+
+.iconCircle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff !important; /* force override */
+
+}
+
+.iconColor {
+  color: #1c9876;
+  height: 13px;
+  width: 13px;
+}
+
+.toggleWrapper {
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  padding: 2px;
+}
+
+.toggleBtn {
+  border-radius: 50px;
+}
+
+.legendRed {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ef4444;
+}
+
+.legendYellow {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #facc15;
+}
+
+.legendGreen {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #22c55e;
+}
+
+.badgeGreen {
+  background-color: #d8f3e4;
+  color: #0abd8b;
+  padding: 4px 24px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  border: 1px solid #0ABD8B;
+}
+.scaleWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 50px;
+  background: linear-gradient(
+    90deg,
+    #0cffb3 0%,
+    #a2ff41 25.24%,
+    #fafb00 37.04%,
+    #fdcc00 58.39%,
+    #ff0000 100%
+  );
+  color: #000;
+  font-weight: 600;
+}
+
+.label {
+  text-align: center;
+  flex: 1;
+}
+
+.pointer {
+  position: absolute;
+  top: 1px;
+  transform: translateX(25%);
+  background: #fff;
+  border-radius: 50%;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .pointer {
+    padding: 10px 10px;
+    font-size: 0.8rem;
+    top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .pointer {
+    padding: 10px 12px;
+    font-size: 0.7rem;
+    transform: translateX(5%);
+    top: 1px;
+  }
+}

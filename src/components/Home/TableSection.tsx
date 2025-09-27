@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "@/styles/tableSection.module.css";
+import { Info } from "lucide-react";
 
 interface TableSectionProps {
   title: string;
@@ -10,8 +11,14 @@ export default function TableSection({ title, rows }: TableSectionProps) {
   return (
     <>
       {/* Section header */}
-      <tr className={styles.sectionHeader}>
-        <td className={`p-3 text-start border-start-0 `}>{title}</td>
+      <tr
+        className={`fw-bold fs-5 ${
+          title === "Carbon Report" ? "border-top-0" : ""
+        }`}
+      >
+        <td className={`p-3 text-start border-start-0 font-manrope`}>
+          {title}
+        </td>
         <td className={`p-3`}></td>
         <td className={`p-3`}></td>
         <td className={`p-3`}></td>
@@ -22,7 +29,7 @@ export default function TableSection({ title, rows }: TableSectionProps) {
       {rows.map((row, rowIdx) => (
         <tr
           key={`${title}-${rowIdx}`}
-          className={`${styles.rowHover} ${styles.fontInter}`}
+          className={`${styles.rowHover} font-inter `}
         >
           {row.map((cell, i) => {
             const textColor =
@@ -48,6 +55,18 @@ export default function TableSection({ title, rows }: TableSectionProps) {
                 style={{ fontSize: "16px" }}
               >
                 {cell}
+                {i === 0 ? (
+                  <Info
+                  className="ps-1"
+                    style={{
+                      height: "20px",
+                      width: "20px",
+                      color: "#00000054",
+                    }}
+                  />
+                ) : (
+                  ""
+                )}
               </td>
             );
           })}

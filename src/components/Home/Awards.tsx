@@ -17,7 +17,7 @@ export default function Awards() {
       <div className="container-xl text-center d-flex justify-content-center">
         {/* Wrapper for horizontal scroll on small screens */}
         <motion.div
-          className="d-flex gap-3 overflow-auto overflow-md-visible py-5"
+          className="d-flex gap-5 overflow-auto overflow-md-visible py-5"
           style={{ scrollbarWidth: "thin" }}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -27,10 +27,10 @@ export default function Awards() {
           {images.map((img, index) => (
             <motion.div
               key={index}
-              className="position-relative flex-shrink-0 opacity-60"
+              className="position-relative flex-shrink-0 opacity-50"
               style={{ width: img.width, height: img.height }}
               whileHover={{ opacity: 1 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.2 }}
             >
               <Image
                 src={img.src}

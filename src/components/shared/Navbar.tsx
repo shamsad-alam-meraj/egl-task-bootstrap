@@ -11,7 +11,6 @@ export default function Navbar() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  // ✅ Close menu automatically if resized to desktop
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
@@ -23,37 +22,37 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="w-100 shadow-sm">
-      <div className="container-xl d-flex align-items-center justify-content-between pb-3">
+    <header className="w-100 shadow-sm font-inter">
+      <div className="container-xl d-flex align-items-center justify-content-between">
         {/* Left Logo */}
         <div>
           <Image
             src="/assets/images/egl_logo.png"
             alt="logo"
-            width={180}
-            height={52}
+            width={249}
+            height={72}
           />
         </div>
 
         {/* Middle Nav */}
-        <nav className="d-none d-md-flex align-items-center gap-4 fs-6 font-inter">
-          <Link href="/" className="fw-semibold text-dark text-decoration-none">
+        <nav className="d-none d-md-flex align-items-center gap-4 fs-6 ">
+          <Link href="/" className="fw-semibold fs-6 text-dark text-decoration-none">
             Home
           </Link>
-          <Link href="/services" className="text-dark text-decoration-none">
+          <Link href="/services" className="text-dark fs-6 text-decoration-none">
             Services
           </Link>
-          <Link href="/blog" className="text-dark text-decoration-none">
+          <Link href="/blog" className="text-dark fs-6 text-decoration-none">
             Blog
           </Link>
-          <Link href="/contact" className="text-dark text-decoration-none">
+          <Link href="/contact" className="text-dark fs-6 text-decoration-none">
             Contact Us
           </Link>
         </nav>
 
         {/* Right Button */}
         <div className="d-none d-md-block">
-          <button className="px-4 py-2 rounded-pill border border-success text-dark fw-semibold fs-6 bg-transparent hover-shadow">
+          <button className="px-4 py-2 rounded-pill border border-primary text-dark fw-semibold fs-6 bg-transparent hover-shadow">
             Login
           </button>
         </div>

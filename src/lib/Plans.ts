@@ -25,6 +25,7 @@ export const planList = [
       "20 uses / month of Basic AI Actions suite",
       "30 minutes / month of AI speech",
       "5 minutes / month of avatars",
+      "5 minutes / month of avatars",
     ],
     highlight: true,
   },

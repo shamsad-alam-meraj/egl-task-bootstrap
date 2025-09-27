@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${manrope.variable} d-flex flex-column vh-100 vw-100 pt-4`}
+        className={`${inter.variable} ${manrope.variable} d-flex flex-column vh-100 vw-100`}
       >
         <Navbar />
         <main className="flex-grow-1 overflow-auto p-4">{children}</main>

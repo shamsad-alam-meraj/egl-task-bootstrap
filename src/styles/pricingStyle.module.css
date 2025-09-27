@@ -1,7 +1,7 @@
 .highlightCard {
   border: 13px solid #deedea;
   background: #ffffff;
-  transform: translateY(-10px) scale(1.05);
+  transform: translateY(-30px) scale(1.02);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -9,15 +9,16 @@
   background-color: #deedea;
 }
 
+.headline {
+  font-size: 55px !important;
+  line-height: 63px;
+}
+
 .toogleBtn {
   width: 58px;
   height: 29px;
   background: #000;
   border-radius: 999px;
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
   transition: background 0.3s ease;
 }
 
@@ -37,10 +38,14 @@
   transform: translateX(29px);
 }
 
+.des1 {
+  color: #595959;
+}
+
 .saveBadge {
   position: absolute;
-  top: -15px;
-  right: -45px;
+  top: -25px;
+  right: -50px;
   background-color: var(--primary);
   color: #fff;
   padding: 7px 20px;

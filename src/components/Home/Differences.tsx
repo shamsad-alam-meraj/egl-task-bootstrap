@@ -38,15 +38,20 @@ export default function Differences() {
             style={{ minWidth: "900px", borderCollapse: "collapse" }}
           >
             <thead className={styles.stickyHeader}>
-              <tr className="border-top-0">
-                <th className="text-start p-3 border-end border-start-0 "></th>
+              <tr className="border-top-0 font-manrope border-bottom-0">
+                <th
+                  style={{
+                    backgroundColor: "#F6FAF7",
+                  }}
+                  className="text-start py-4 px-3 border-end border-start-0 "
+                ></th>
                 {plans.map((plan) => (
                   <th
                     key={plan}
-                    className={`py-3 px-3 text-center fw-bold border-start border-end border-top-0 ${
+                    className={`py-4 px-3 text-center fw-bold border-start border-end border-top-0  ${
                       plan === "Expert" ? "border-end-0" : ""
                     }`}
-                    style={{ fontSize: "1.25rem" }}
+                    style={{ fontSize: "1.25rem", backgroundColor: "#F6FAF7" }}
                   >
                     {plan}
                   </th>
@@ -67,9 +72,9 @@ export default function Differences() {
 
             <tfoot>
               <tr className="border-top border-bottom-0">
-                <td className="border-start-0"></td>
+                <td className="border-start-0 border-end-0"></td>
                 {plans.map((plan, idx) => (
-                  <td key={idx} className={`fw-bold p-3 bg-primary text-white`}>
+                  <td key={idx} className={`fw-bold p-3 bg-primary text-white border-start-0 border-end-0`}>
                     Get Started
                   </td>
                 ))}

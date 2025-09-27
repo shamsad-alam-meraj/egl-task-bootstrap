@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Everything Green
+
+A fully responsive Next.js project based on the Figma design: [Figma Link](https://www.figma.com/design/YngSEq4r62d4H3woVLOGuY/Front-end-Nextjs?node-id=1-479&t=MVcdBfIQHd7iPhhr-1)
+
+---
+
+## Features
+
+- Fully responsive -
+  - Navbar
+  - Pricing
+  - Awards 
+  - Differences
+  - Enterprises
+  - FAQ
+  - Footer
+- Horizontal scroll table for mobile devices
+- Smooth animations with **Framer Motion**
+- Multi-font setup: **Manrope, Inter, Lato, Arial**
+- **Bootstrap** for styling and custom css
+
+---
+
+## Live Demo
+
+[Click Here](https://egl-task-bootstrap.vercel.app/)
+
+---
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to run the project locally:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/shamsad-alam-meraj/egl-task-bootstrap.git
+cd egl-task-bootstrap
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Run the Development Server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4. Open `http://localhost:3000` in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+ ---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Design-to-Code Process
 
-## Learn More
+### 1. Analyze the Figma Design
+- Identified sections, components, typography, colors, spacing.  
+- Noted responsive behavior for mobile, tablet, and desktop.
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Create Component Structure
+- Navbar, Footer, Awards, Differences table, Enterprises, Footer.  
+- Reusable components for consistency.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. Setup Project
+- Next.js + TypeScript  
+- Bootstrap for styling  
+- Framer Motion for animations
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 4. Implement Fonts
+- Imported Manrope, Inter, Lato by using (`next/font/google`)  
+- Arial as system font  
+- Created CSS utility classes for each font
 
-## Deploy on Vercel
+### 5. Responsive Layouts
+- Mobile-first approach  
+- Horizontal scroll for tables on small screens  
+- Drawer menu for mobile navbar
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 6. Testing & Refinement
+- Checked for responsiveness  
+- Optimized images with Next.js `Image` component  
+- Added smooth animations for UI enhancements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ ---
+
+## Tech Stack
+
+- Next.js
+- TypeScript
+- Bootstrap
+- Framer Motion
+- Recharts
+- Google Fonts (Manrope, Inter, Lato)
+- System Font: Arial
+

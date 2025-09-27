@@ -3,7 +3,6 @@
 import { planList } from "@/lib/Plans";
 import { ChevronRight, CircleCheck } from "lucide-react";
 import { useState } from "react";
-import "@/app/globals.css";
 import styles from "@/styles/pricingStyle.module.css";
 
 export default function PricingSection() {
@@ -123,7 +122,7 @@ export default function PricingSection() {
         </div>
 
         <button
-          className={`mt-5 btn btn-primary rounded-pill fw-bold px-5 py-3`}
+          className={`mt-5 btn btn-primary rounded-pill fw-bold px-md-5 px-3 py-md-3`}
         >
           Compare All Features And Plans
         </button>

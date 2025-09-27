@@ -67,3 +67,18 @@
 .transition {
   transition: all 0.2s ease-in-out;
 }
+
+@media (max-width: 768px) {
+  .highlightCard {
+    margin-top: 10px;
+    transform: none;
+    border: 2px solid #deedea;
+  }
+}
+
+@media (max-width: 480px) {
+  .highlightCard {
+    margin-top: 10px;
+    border: 2px solid #deedea;
+  }
+}

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Manrope } from "next/font/google";
+import { Inter, Lato, Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 
@@ -10,6 +10,11 @@ const inter = Inter({
 const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-manrope",
+});
+const lato = Lato({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-lato",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${manrope.variable} d-flex flex-column vh-100 vw-100`}
+        className={`${inter.variable} ${manrope.variable} ${lato.variable} d-flex flex-column vh-100 vw-100`}
       >
         <Navbar />
         <main className="flex-grow-1 overflow-auto p-4">{children}</main>

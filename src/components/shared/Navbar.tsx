@@ -22,7 +22,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="w-100 shadow-sm font-inter">
+    <header className="w-100 font-inter">
       <div className="container-xl d-flex align-items-center justify-content-between">
         {/* Left Logo */}
         <div>

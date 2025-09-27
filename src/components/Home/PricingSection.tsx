@@ -12,7 +12,7 @@ export default function PricingSection() {
   return (
     <section className="w-100 pt-5 font-manrope">
       <div className="container-xl text-center">
-        <h2 className={` fw-bold text-capitalize pb-3 ${styles.headline}`}>
+        <h2 className={` fw-bold text-capitalize py-5 ${styles.headline}`}>
           Select the pricing plan that <br />
           <span className="mt-5">best suits your needs.</span>
         </h2>
@@ -43,7 +43,7 @@ export default function PricingSection() {
           {plans.map((plan, idx) => (
             <div key={idx} className="col-12 col-md-12 col-lg-4">
               <div
-                className={`text-start shadow-sm  px-3 py-4 transition  ${
+                className={`text-start shadow-sm p-4 transition  ${
                   plan.highlight
                     ? `p-4 bg-white ${styles.highlightCard} rounded-5`
                     : `p-4 hover-translate-y hover-shadow-lg ${styles.otherCard} ${styles.hoverTranslateY} ${styles.hoverShadowLG}`

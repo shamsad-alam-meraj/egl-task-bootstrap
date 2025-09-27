@@ -227,7 +227,7 @@ export default function EnterprisePlan() {
               </div>
             </div>
             {/* Bottom Section  */}
-            <div className="d-flex align-items-center justify-content-center">
+            <div className="d-flex align-items-center justify-content-center font-inter fw-semibold">
               <div className={styles.scaleWrapper}>
                 {/* Labels */}
                 {grades.map((g) => (

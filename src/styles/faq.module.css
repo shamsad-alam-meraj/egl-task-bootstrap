@@ -1,28 +1,24 @@
 .title {
   font-size: 2.5rem;
-  font-weight: 700;
-  font-family: "Manrope", sans-serif;
+ 
 }
 
 .faqId {
-  font-weight: 500;
   font-size: 1.5rem;
-  font-family: "Inter", sans-serif;
   color: #000;
+  margin-right: 32px;
 }
 
 .question {
   font-weight: 500;
   font-size: 1.5rem;
-  font-family: "Inter", sans-serif;
   color: #000000;
 }
 
 .answer {
   font-size: 1.125rem;
-  font-family: Arial, sans-serif;
   color: #000;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .plusMinusIcon {

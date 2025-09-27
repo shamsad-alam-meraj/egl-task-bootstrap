@@ -3,6 +3,7 @@
   --font-manrope: "Manrope", sans-serif;
   --font-inter: "Inter", sans-serif;
   --font-arial: "Arial", sans-serif;
+  --font-lato: "Lato", sans-serif;
   --primary: #1c9876;
   --background: #ffffff;
   --foreground: #171717;
@@ -34,6 +35,9 @@ body {
 .font-arial {
   font-family: var(--font-arial);
 }
+.font-lato {
+  font-family: var(--font-lato);
+}
 /* Custom Primary Btn  */
 .btn-primary {
   --bs-btn-bg: var(--bs-primary);
@@ -52,4 +56,3 @@ body {
   --bs-btn-hover-border-color: var(--bs-primary);
   --bs-btn-hover-color: #fff;
 }
-

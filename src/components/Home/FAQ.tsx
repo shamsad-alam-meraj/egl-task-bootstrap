@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Minus, Plus } from "lucide-react";
-import styles from "@/styles/faq.module.css"; // custom CSS
+import styles from "@/styles/faq.module.css";
 
 const faqs = [
   {
@@ -45,15 +45,15 @@ export default function FAQ() {
 
   return (
     <section className="container py-5">
-      <h2 className={`text-center mb-5 ${styles.title}`}>
+      <h2 className={`text-center mt-5 fw-bold font-manrope ${styles.title}`}>
         Frequently Asked Questions
       </h2>
-
-      <div>
+      <div style={{ paddingTop: "56px" }}>
         {faqs.map((faq, index) => (
           <div
+            style={{ paddingTop: "52px", paddingBottom: "52px" }}
             key={faq.id}
-            className={`d-flex flex-column justify-content-center py-3 ${
+            className={`d-flex flex-column justify-content-center ${
               index < faqs.length - 1 ? "border-bottom" : ""
             }`}
           >
@@ -61,11 +61,15 @@ export default function FAQ() {
               className="d-flex align-items-start w-100 text-start gap-3 btn btn-link text-decoration-none p-0"
               onClick={() => toggleFAQ(index)}
             >
-              <span className={`me-3 ${styles.faqId}`}>{faq.id}</span>
+              <span className={`fw-semibold font-lato ${styles.faqId}`}>
+                {faq.id}
+              </span>
               <div className="flex-grow-1">
-                <h3 className={styles.question}>{faq.question}</h3>
+                <h3 className={`${styles.question} font-inter`}>
+                  {faq.question}
+                </h3>
                 {openIndex === index && (
-                  <p className={styles.answer}>{faq.answer}</p>
+                  <p className={`${styles.answer} font-arial`}>{faq.answer}</p>
                 )}
               </div>
               <div className="ms-auto d-flex align-items-center">

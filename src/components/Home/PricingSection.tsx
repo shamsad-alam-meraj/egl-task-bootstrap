@@ -41,11 +41,11 @@ export default function PricingSection() {
         {/* Pricing Cards */}
         <div className="row g-4 mt-5 mb-5">
           {plans.map((plan, idx) => (
-            <div key={idx} className="col-12 col-md-4 ">
+            <div key={idx} className="col-12 col-md-12 col-lg-4">
               <div
                 className={`text-start shadow-sm  px-3 py-4 transition  ${
                   plan.highlight
-                    ? `p-4 bg-white ${styles.highlightCard} rounded-4`
+                    ? `p-4 bg-white ${styles.highlightCard} rounded-5`
                     : `p-4 hover-translate-y hover-shadow-lg ${styles.otherCard} ${styles.hoverTranslateY} ${styles.hoverShadowLG}`
                 }`}
               >

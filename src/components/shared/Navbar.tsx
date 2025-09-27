@@ -36,10 +36,16 @@ export default function Navbar() {
 
         {/* Middle Nav */}
         <nav className="d-none d-md-flex align-items-center gap-4 fs-6 ">
-          <Link href="/" className="fw-semibold fs-6 text-dark text-decoration-none">
+          <Link
+            href="/"
+            className="fw-semibold fs-6 text-dark text-decoration-none"
+          >
             Home
           </Link>
-          <Link href="/services" className="text-dark fs-6 text-decoration-none">
+          <Link
+            href="/services"
+            className="text-dark fs-6 text-decoration-none"
+          >
             Services
           </Link>
           <Link href="/blog" className="text-dark fs-6 text-decoration-none">

@@ -1,8 +1,9 @@
 .highlightCard {
-  border: 13px solid #deedea;
   background: #ffffff;
-  transform: translateY(-30px) scale(1.02);
+  border: 24px solid #deedea;
+  transform: translateY(-45px) scale(1.01);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 10px 25px 0px #5d5d5d33;
 }
 
 .otherCard {
@@ -74,7 +75,7 @@
     line-height: 40px;
   }
   .highlightCard {
-    margin-top: 10px;
+    margin-top: 1px;
     transform: none;
     border: 2px solid #deedea;
   }

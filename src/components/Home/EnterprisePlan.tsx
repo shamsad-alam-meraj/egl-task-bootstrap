@@ -101,7 +101,7 @@ export default function EnterprisePlan() {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="col-md-6 d-flex flex-column gap-4 font-inter">
+          <div className="col-md-6 d-flex flex-column gap-4 font-inter mt-5 mt-md-0">
             {/* Upper Section  */}
             <div className=" d-flex flex-column flex-md-row gap-4 font-inter">
               {/* Left Column */}

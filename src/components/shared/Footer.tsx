@@ -2,14 +2,14 @@
 
 import { Youtube, Linkedin, Github, BookOpen } from "lucide-react";
 import Image from "next/image";
-import styles from "@/styles/footer.module.css"; // optional for custom fonts/colors
+import styles from "@/styles/footer.module.css";
 
 export default function Footer() {
   return (
     <footer className={`shadow-sm ${styles.footerShadow}`}>
       <div className="container py-5">
         {/* Top */}
-        <div className="row border-bottom pb-4 mb-4">
+        <div className="row border-bottom pb-5 mb-4">
           {/* Logo + description */}
           <div className="col-12 col-md-6 mb-4 mb-md-0">
             <Image
@@ -18,11 +18,13 @@ export default function Footer() {
               width={123}
               height={36}
             />
-            <p className={`mt-3 ${styles.description}`}>
-              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex.
-            </p>
+            <div className={`col-12 col-md-9 font-inter ${styles.description}`}>
+              <p>
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex.
+              </p>
+            </div>
           </div>
 
           {/* Right side: Solutions, Company, Community */}
@@ -30,20 +32,22 @@ export default function Footer() {
             <div className="row">
               {/* Solutions */}
               <div className="col-12 col-sm-4 mb-3 mb-sm-0">
-                <h5 className={styles.heading}>Solutions</h5>
+                <h5 className={`font-bold font-manrope ${styles.heading}`}>
+                  Solutions
+                </h5>
                 <ul className={styles.list}>
-                  <li>
-                    <a className="text-decoration-none text-black" href="#">
+                  <li className={styles.listItem}>
+                    <a className="text-decoration-none font-inter" href="#">
                       Web Tool
                     </a>
                   </li>
-                  <li>
-                    <a className="text-decoration-none text-black" href="#">
+                  <li className={styles.listItem}>
+                    <a className="text-decoration-none font-inter" href="#">
                       Consulting
                     </a>
                   </li>
-                  <li>
-                    <a className="text-decoration-none text-black" href="#">
+                  <li className={styles.listItem}>
+                    <a className="text-decoration-none font-inter" href="#">
                       Research
                     </a>
                   </li>
@@ -52,20 +56,22 @@ export default function Footer() {
 
               {/* Company */}
               <div className="col-12 col-sm-4 mb-3 mb-sm-0">
-                <h5 className={styles.heading}>Company</h5>
+                <h5 className={`font-bold font-manrope ${styles.heading}`}>
+                  Company
+                </h5>
                 <ul className={styles.list}>
-                  <li>
-                    <a className="text-decoration-none text-black" href="#">
+                  <li className={styles.listItem}>
+                    <a className="text-decoration-none font-inter" href="#">
                       About
                     </a>
                   </li>
-                  <li>
-                    <a className="text-decoration-none text-black" href="#">
+                  <li className={styles.listItem}>
+                    <a className="text-decoration-none font-inter" href="#">
                       Methodology
                     </a>
                   </li>
-                  <li>
-                    <a className="text-decoration-none text-black" href="#">
+                  <li className={styles.listItem}>
+                    <a className="text-decoration-none font-inter" href="#">
                       Partners
                     </a>
                   </li>
@@ -74,20 +80,22 @@ export default function Footer() {
 
               {/* Community */}
               <div className="col-12 col-sm-4">
-                <h5 className={styles.heading}>Community</h5>
+                <h5 className={`font-bold font-manrope ${styles.heading}`}>
+                  Community
+                </h5>
                 <ul className={styles.list}>
-                  <li>
-                    <a className="text-decoration-none text-black" href="#">
+                  <li className={styles.listItem}>
+                    <a className="text-decoration-none font-inter" href="#">
                       Blog
                     </a>
                   </li>
-                  <li>
-                    <a className="text-decoration-none text-black" href="#">
+                  <li className={styles.listItem}>
+                    <a className="text-decoration-none font-inter" href="#">
                       Events
                     </a>
                   </li>
-                  <li>
-                    <a className="text-decoration-none text-black" href="#">
+                  <li className={styles.listItem}>
+                    <a className="text-decoration-none font-inter" href="#">
                       Open-Source Data
                     </a>
                   </li>
@@ -98,13 +106,16 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-          <p className={`mb-2 mb-md-0 ${styles.copyright}`}>
+        <div
+          style={{ paddingTop: "30px" }}
+          className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
+        >
+          <p className={`mb-2 mb-md-0 font-inter ${styles.copyright}`}>
             Copyright © 2025 everythinggreen. All Rights Reserved
           </p>
 
           {/* Social icons */}
-          <div className="d-flex gap-3">
+          <div className="d-flex gap-5">
             <a href="#" aria-label="YouTube">
               <Youtube className={styles.icon} />
             </a>

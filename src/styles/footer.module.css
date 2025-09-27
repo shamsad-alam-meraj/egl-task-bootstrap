@@ -1,49 +1,50 @@
 .footerShadow {
   box-shadow: 0px 0px 10px rgba(217, 217, 217, 0.5);
+  background-color: rgba(15, 209, 186, 0.0696);
 }
 
 .description {
   font-size: 16px;
   color: #595959;
   text-align: justify;
-  font-family: "Inter", sans-serif;
-  padding-right: 1rem; /* optional */
+  padding-right: 1rem;
+  margin-top: 32px;
 }
 
 .heading {
-  font-weight: 600;
-  font-family: "Manrope", sans-serif;
-  margin-bottom: 0.5rem;
-  color: #000;
+  margin-bottom: 20px;
 }
 
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 14px;
+
   color: #595959;
   font-family: "Inter", sans-serif;
 }
 
-.list li {
-  margin-bottom: 0.5rem;
+.listItem {
+  margin-bottom: 20px;
+}
+.listItem a {
+  color: #595959;
+  font-size: 16px;
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
-  color: #595959;
+  width: 18px;
+  height: 18px;
+  color: #717171;
   transition: color 0.3s;
 }
 
 .icon:hover {
-  color: #0abd8b; /* example hover color */
+  color: #0abd8b;
 }
 
 .copyright {
-  font-size: 14px;
-  color: #6c757d;
-  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: #595959;
   text-align: center;
 }
